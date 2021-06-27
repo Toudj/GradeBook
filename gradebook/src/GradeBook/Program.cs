@@ -7,8 +7,17 @@ namespace GradeBook
         static void Main(string[] args)
         {
             //string name = "Toudj";
-            Console.WriteLine("Hello " + args[0] + " !");
-            Console.WriteLine($"Hello {args[0]} !");
+            if(args.Length > 0)
+            {
+                Console.WriteLine("Hello " + args[0] + " !");
+                Console.WriteLine($"Hello {args[0]} !");
+
+            }
+            else
+            {
+                Console.WriteLine("Hello");
+            }
+            
            
         }
     }
