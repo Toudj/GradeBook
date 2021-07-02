@@ -3,8 +3,31 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
+
+    public delegate string WriteLogDelegate(string logMessage);
+
     public class TypeTests
     {
+
+        [Fact]
+        public void WriteLogDelegateCanPointToMethod()
+        {
+        //Given
+            WriteLogDelegate log;
+            log = new WriteLogDelegate(ReturnMessage);
+            var result = log("Hello!");
+
+            
+
+        //When
+            Assert.Equal("Hello!", result);
+        //Then
+        }
+        string ReturnMessage(string message)
+        {
+            return message;
+        }
+
         [Fact]
         public void StringsBehaveLikeValueTypes()
         {
@@ -102,7 +125,7 @@ namespace GradeBook.Tests
             Assert.NotSame(book1, book2);    
             
         }
-
+        [Fact]
          public void TwoVarsReferenceSameObject()
         {
             

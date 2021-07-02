@@ -23,7 +23,7 @@ namespace GradeBook.Tests
 
             //assert
             Assert.Equal(259.1, result.Total, 1);
-            Assert.Equal(5, result.nStudents);
+            Assert.Equal(5, result.nAcademics);
             Assert.Equal(51.8, result.Average, 1);
             Assert.Equal(2.0, result.Low, 1);
             Assert.Equal(100.0, result.High, 1);
