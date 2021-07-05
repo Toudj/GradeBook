@@ -43,6 +43,7 @@ namespace GradeBook
             nAcademics += 1;
             High = Math.Max(number, High);
             Low = Math.Min(number, Low);
+            
         }
 
 
@@ -52,7 +53,7 @@ namespace GradeBook
             Total = 0.0;
             High = double.MinValue;
             Low = double.MaxValue;
-
+        
         }
     }
 }
