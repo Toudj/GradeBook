@@ -1,0 +1,33 @@
+
+cd to C:\Users\Tidjani\source\repos\C#App\gradebook folder
+->Run the project
+dotnet run --project src\GradeBook\GradeBook.csproj
+->Build the project
+dotnet build
+->Test the project
+dotnet test
+
+Others command lines seen in the beginning:
+dotnet new console -> create new console project(GradeBook folder)
+dotnet run ->Run the project
+code. ->Open project with VS code
+dotnet restore ->
+dotnet new xunit ->create new xunit test project(GradeBook.Tests folder)
+dotnet add reference
+dotnet new sln -> create new solution
+dotnet sln add ->add solution (src\GradeBook\GradeBook.csproj)
+dotnet sln add test\GradeBook.Tests\GradeBook.Tests.csproj
+dotnet run --project src\GradeBook\GradeBook.csproj
+
+Git Command Line
+git push origin master
+git status
+
+git init
+git add gradebook
+git commit -m "first commit" for example
+git branch -M main
+git remote add origin https://github.com/Toudj/GradeBook.git
+git push -u origin main
+
+Steps in order: git add, git commit and git push
